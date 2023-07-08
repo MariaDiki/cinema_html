@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Movie Theater</title>
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./duckingDucjLogo.jpg" alt="" style="height: 50px;">
+                    DuckingDuckMovieTheater</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" ariaexpanded="false"
+                    aria-label="Toggle navigation">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#cards">Movies Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Order">Ticket Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Address">Address&Contacts&WebInfo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#footer">WebInfo</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <div id="carousel" class="carousel slide text-center" data-bs-ride="carousel" style="background-color: black;">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="fifthElement.jpg" alt=""
+                        style="height: 400px; width: auto;"></div>
+                <div class="carousel-item"><img src="sonic1.jpg" alt="" style="height: 400px; width: auto;"></div>
+                <div class="carousel-item"><img src="sonic2.jpg" alt="" style="height: 400px; width: auto;"></div>
+                <div class="carousel-item"><img src="annihilation.jpg" alt="" style="height: 400px; width: auto;"></div>
+                <div class="carousel-item"><img src="doom.jpg" alt="" style="height: 400px; width: auto;"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+
+
+    <main class="main">
+
+        <div id="cards" class="cards">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100 w-75 bg-warning">
+                        <img src="./fifthElement.jpg" class="card-img-top" alt="..." style="width: 200px; height:auto">
+                        <div class="card-body">
+                            <h5 class="card-title">The Fifth Element</h5>
+                            <p class="card-text">
+                                <b>Genre: </b> Science fiction, action
+                                <br>
+                                <b>Date of Release:</b> 07.05.1997
+                                <br>
+                                <b>Plot:</b>
+                                Korben Dallas, a cab driver, tries to secure four
+                                mystical stones and a mysterious fifth element that
+                                alone can defeat a cosmic evil force during an
+                                apocalyptic war.
+                                <br>
+                                <b>Price:</b> 12$
+                                <br>
+                                <b>Duration:</b> 126 Minutes
+                            </p>
+                            <a href="#Order" class="btn btn-primary">Order Tickets</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-75 bg-success">
+                        <img src="./annihilation.jpg" class="card-img-top" alt="..." style="width: 200px; height:auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Annihilation</h5>
+                            <p class="card-text">
+
+                                <b>Genre: </b> Science fiction, Horror
+                                <br>
+                                <b>Date of Release:</b> 23.02.2018
+                                <br>
+                                <b>Plot:</b>
+                                Lena, a biologist and former soldier, joins a mission
+                                to uncover what happened to her husband inside Area X
+                                -- a sinister and mysterious phenomenon that is
+                                expanding across the American coastline.
+                                <br>
+                                <b>Price:</b> 22$
+                                <br>
+                                <b>Duration:</b> 115 Minutes
+
+                            </p>
+                            <a href="#Order" class="btn btn-primary">Order Tickets</a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-75 bg-danger">
+                        <img src="./sonic1.jpg" class="card-img-top" alt="..." style="width: 210px; height:auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Sonic the Hedgehog</h5>
+                            <p class="card-text">
+                                <b>Genre: </b> Comedy
+                                <br>
+                                <b>Date of Release:</b> 25.01.2020
+                                <br>
+                                <b>Plot:</b>
+                                On a distant planet, Sonic the Hedgehog, an anthropomorphic
+                                blue hedgehog who can run at supersonic speed, is chased by
+                                a tribe of echidnas. His guardian, Longclaw the Owl,
+                                gives him a bag of rings that open portals to other planets.
+                                She uses one to send him to Earth while she stays behind to
+                                hold off the echidnas.
+                                <br>
+                                <b>Price:</b> 20$
+                                <br>
+                                <b>Duration:</b> 99 Minutes
+
+                            </p>
+                            <a href="#Order" class="btn btn-primary">Order Tickets</a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-75 bg-info">
+                        <img src="./Polly.jpg" class="card-img-top" alt="..." style="width: 230px; height:auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Along Came Polly</h5>
+                            <p class="card-text">
+                                <b>Genre: </b> Romance, Comedy
+                                <br>
+                                <b>Date of Release:</b> 16.01.2004
+                                <br>
+                                <b>Plot:</b>
+                                Reuben finds his life taking a different turn when he reconnects
+                                and falls in love with his old classmate, Polly. Chaos ensues when
+                                his ex-wife, Lisa, returns to reconcile with him.
+                                <br>
+                                <b>Price:</b> 13$
+                                <br>
+                                <b>Duration:</b> 90 Minutes
+
+                            </p>
+                            <a href="#Order" class="btn btn-primary">Order Tickets</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100 w-75 bg-danger">
+                        <img src="./DieHard.jpg" class="card-img-top" alt="..." style="width: 200px; height:auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Die Hard</h5>
+                            <p class="card-text">
+                                <b>Genre: </b> Action
+                                <br>
+                                <b>Date of Release:</b> 15.07.1988
+                                <br>
+                                <b>Plot:</b>
+                                Hoping to spend Christmas with his estranged wife,
+                                detective John McClane arrives in LA. However,
+                                he learns about a hostage situation in an office
+                                building and his wife is one of the hostages
+                                <br>
+                                <b>Price:</b> 10$
+                                <br>
+                                <b>Duration:</b> 132 Minutes
+
+                            </p>
+                            <a href="#Order" class="btn btn-primary">Order Tickets</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-75 bg-info">
+                        <img src="./doom.jpg" class="card-img-top" alt="..." style="width: 250px; height:auto">
+                        <div class="card-body">
+                            <h5 class="card-title">DOOM</h5>
+                            <p class="card-text">
+
+                                <b>Genre: </b> Action, Horror
+                                <br>
+                                <b>Date of Release:</b> 17.10.2005
+                                <br>
+                                <b>Plot:</b>
+                                A group of space marines travels to Mars to investigate
+                                the mishaps in a research facility. However, they find
+                                themselves under threat after being attacked by strange
+                                creature.
+                                <br>
+                                <b>Price:</b> 10$
+                                <br>
+                                <b>Duration:</b> 104 Minutes
+
+                            </p>
+                            <a href="#Order" class="btn btn-primary">Order Tickets</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-75 bg-success">
+                        <img src="./sonic2.jpg" class="card-img-top" alt="..." style="width: 200px; height:auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Sonic the Hedgehog 2</h5>
+                            <p class="card-text">
+
+                                <b>Genre: </b> Comedy, Action
+                                <br>
+                                <b>Date of Release:</b> 07.04.2022
+                                <br>
+                                <b>Plot:</b>
+                                After settling in Green Hills, Sonic is eager to prove
+                                that he has what it takes to be a true hero. His test
+                                comes when Dr. Robotnik returns with a new partner, Knuckles,
+                                in search of a mystical emerald that has the power to destroy
+                                civilizations.
+                                <br>
+                                <b>Price:</b> 15$
+                                <br>
+                                <b>Duration:</b> 106 Minutes
+
+
+                            </p>
+                            <a href="#Order" class="btn btn-primary">Order Tickets</a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-75 bg-warning">
+                        <img src="./murderMystery.jpg" class="card-img-top" alt="..." style="width: 200px; height:auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Murder Mystery</h5>
+                            <p class="card-text">
+                                <b>Genre: </b> Comedy, Mystery
+                                <br>
+                                <b>Date of Release:</b> 14.06.2019
+                                <br>
+                                <b>Plot:</b>
+                                A New York cop and his wife go on a European vacation
+                                to reinvigorate the spark in their marriage. A chance
+                                encounter leads to them being framed for the murder of
+                                an elderly billionaire.
+                                <br>
+                                <b>Price:</b> 21$
+                                <br>
+                                <b>Duration:</b> 97 Minutes
+
+                            </p>
+                            <a href="#Order" class="btn btn-primary">Order Tickets</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+
+
+        <div class="box-wrapper">
+
+            <div id="box1">
+                <div id="box2">
+                    <div id="Order" class="Order">
+
+                        <h2><u><b> Ticket Order:</b></u></h2>
+                        <br>
+                        <div class="moviesOrder">
+                            <select class="form-select" aria-label="Default select example" style="width: 200px;">
+                                <option selected>Choose a Movie:</option>
+                                <option value="1">The Fifth Element</option>
+                                <option value="2">Annihilation</option>
+                                <option value="3">Sonic the Hedgehog</option>
+                                <option value="4">Along Came Polly</option>
+                                <option value="5">Die Hard</option>
+                                <option value="6">DOOM</option>
+                                <option value="7">Sonic the Hedgehog 2</option>
+                                <option value="8">Murder Mystery</option>
+
+                            </select>
+                            <br>
+
+                            <select class="form-select" aria-label="Default select example" style="width: 200px;">
+                                <option selected>Choose Date:</option>
+                                <option value="1">Sun 19th June</option>
+                                <option value="2">Mon 20th June</option>
+                                <option value="3">Tue 21th June</option>
+                                <option value="4">Fri 24th June</option>
+                                <option value="5">Sat 25th June</option>
+                            </select>
+                            <br>
+                            <select class="form-select" aria-label="Default select example" style="width: 200px;">
+                                <option selected>Choose Time:</option>
+                                <option value="1">16:00</option>
+                                <option value="2">17:00</option>
+                                <option value="3">18:00</option>
+                                <option value="4">20:00</option>
+                                <option value="5">23:00</option>
+                            </select>
+                            <br>
+                            <button type="button" class="rounded bg-info"><b> Select </b></button>
+
+                            <br>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="middle-column">
+                    <div id="Address" class="Address text-center">
+
+                        <h2><u><b>Address:</b></u></h2>
+                        <br>
+
+                        <div>
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.2482793214203!2d34.79439842448231!3d32.06253287397042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b740b40ab65%3A0x1e7340a790148fc0!2z15nXkteQ15wg15DXnNeV158gNTUsINeq15wg15DXkdeZ15Et15nXpNeV!5e0!3m2!1siw!2sil!4v1688826759678!5m2!1siw!2sil"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <br>
+                            <a href="https://goo.gl/maps/WYPmKQi2Gj9WpRmA8" class="btn btn-info">Go to Google Maps</a>
+                        </div>
+
+
+                        <br>
+                        <h5>Yigal Alon 55</h5>
+                        <h5>Tel Aviv</h5>
+                        <h5>Parking: Palma'h parking lot</h5>
+                        <h5 class="text-danger">closed on Wednesday</h5>
+
+                        <br>
+                        <br>
+                    </div>
+
+                </div>
+                <div id="box4">
+                    <form>
+                        <h2><u><b>Contact Us:</b></u></h2>
+                        <label for="email"> Email: </label>
+                        <br>
+                        <input type="email" name="email" required>
+                        <br>
+                        <label for="tel"> PhoneNumber:</label>
+                        <br>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                        <br>
+                        <br>
+                        <input type="checkbox" name="checkbox" required>
+                        <label for="checkbox"> Not a Robot</label>
+                        <br>
+                        <button type="button" class="rounded"> Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <div style="background-color: rgb(212, 136, 248);">
+            <h5><b><u>Visit Us Also On:</u></b></h5>
+            <br>
+
+            <button type="button" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                    </path>
+                </svg>Facebook
+            </button>
+            <button type="button" class="btn btn-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                    </path>
+                </svg>Instagram
+            </button>
+            <button type="button" class="btn btn-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path
+                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+                    </path>
+                </svg>WhatsApp
+            </button>
+        </div>
+        <div class="logoFooter"><img src="./duckingDucjLogo.jpg" alt="" style="height: 50px;">all right reserved to
+            Ducking Duck Corporation @CopyrightsDuckingDuckCo.</div>
+
+
+
+    </footer>
+
+    <div name="#"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

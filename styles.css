@@ -1,0 +1,76 @@
+.header {
+
+    text-align: center;
+    background-position: center;
+}
+
+.main {
+
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+
+}
+
+.carousel-inner {
+
+    margin: 0 auto;
+    background-position: center center;
+
+}
+
+
+.logoFooter {
+
+    text-align: right;
+}
+
+
+.box-wrapper {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#box1 {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#box2 {
+    flex-grow: 1;
+    border: solid 5px black;
+    padding-left: 10px;
+    width: auto;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(244, 129, 193, 1) 100%);
+}
+
+.middle-column {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.middle-column div {
+    flex-grow: 1;
+    margin: 0 8px;
+    border: solid 5px black;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(7, 183, 187, 1) 100%);
+
+}
+
+.middle-column div+div {
+    margin-top: 8px;
+}
+
+#box4 {
+    flex-grow: 1;
+    padding-left: 10px;
+
+    border: solid 5px black;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(187, 7, 186, 1) 100%);
+
+}
